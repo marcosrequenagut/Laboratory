@@ -1,0 +1,3 @@
+fastapi[standard]
+sqlite3
+contextlib
