@@ -1,17 +1,16 @@
-API REST para Gestión de Proyectos.
-Este proyecto implementa una API REST utilizando FastAPI para gestionar proyectos, permitiendo la creación de proyectos, registro de tiempo y eliminación de proyectos. Los proyectos se almacenan en una base de datos SQLite.
+# REST API for Project Management
 
-Descripción
-La API permite realizar las siguientes acciones sobre los proyectos:
+This project implements a REST API using **FastAPI** to manage projects, allowing for project creation, time logging, and project deletion. The projects are stored in an **SQLite** database.
 
-1.- Crear un proyecto: Si el proyecto no existe, se crea un nuevo proyecto con un tiempo inicial de 0.
+## Description
 
-2.- Obtener todos los proyectos: Muestra todos los proyectos y su tiempo asociado.
+The API allows the following actions on projects:
 
-3.- Registrar tiempo: Permite agregar tiempo a un proyecto existente.
+1. **Create a project**: If the project does not exist, a new project is created with an initial time of 0.
+2. **Get all projects**: Displays all projects and their associated time.
+3. **Log time**: Allows adding time to an existing project.
+4. **Delete a project**: Removes a project from the database.
+5. **Snapshot**: *(Future)* Functionality to create a snapshot of a project.
 
-4.- Eliminar un proyecto: Borra un proyecto de la base de datos.
+Projects are represented by their **name** and an associated **time** (in minutes).
 
-5.- Snapshot: (Futuro) Funcionalidad para crear un snapshot de un proyecto.
-
-Los proyectos están representados por su nombre y un tiempo asociado (en minutos).
